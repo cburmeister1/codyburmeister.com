@@ -197,11 +197,13 @@ header.masthead {
   background-size: cover; }
   header.masthead .header-content {
     position: relative;
+    height: 30%; 
     width: 100%;
-    padding: 150px 15px 100px;
+    padding: 200px 15px 100px;
     text-align: center; }
     header.masthead .header-content .header-content-inner h1 {
-      font-size: 30px;
+      font-size: 32px;
+      line-height: 1.2;
       font-weight: 700;
       margin-top: 0;
       margin-bottom: 0;
@@ -257,6 +259,7 @@ header.masthead {
 .service-box {
   max-width: 400px;
   margin: 50px auto 0; }
+  
   @media (min-width: 992px) {
     .service-box {
       margin: 20px auto 0; } }
@@ -367,5 +370,25 @@ header.masthead {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
 
 .btn-xl {
+  background: linear-gradient(white, darkgrey);
+  border: 1px solid darkgray;
+  background-color: white;
   padding: 15px 25px; }
   
+
+/* Typewriter */
+.hidden {
+  position: absolute; 
+  overflow: hidden; 
+  clip: rect(0 0 0 0); 
+  height: 1px; width: 1px; 
+  margin: -1px; padding: 0; border: 0; }
+/* Animated blinking cursor */
+.typed-cursor{
+  opacity: 1;
+  font-weight: 100;
+  animation: blink 0.7s infinite; } 
+@keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; } }

@@ -1,3 +1,13 @@
+// Typewriter || typed.js
+$( document ).ready(function() {
+    $(".type-wrap span:last").typed({
+        strings: ["^1000 Full Stack Developer focused on creating amazing user <br>experiences."],
+        typeSpeed: 30,
+        loop: false,
+        contentType: 'html'
+    });
+  });
+
 (function($) {
   "use strict";
 
